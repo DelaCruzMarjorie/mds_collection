@@ -1,0 +1,847 @@
+@font-face {
+    font-family: 'Margin';
+    src: url('Margin\ DEMO.otf');
+}
+
+@font-face {
+    font-family: 'Marjorie';
+    src: url('ZTGatha-SemiBold.ttf');
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Josefin Sans', sans-serif;
+
+}
+
+
+header{
+width: 100%;
+padding: 1cm;
+padding-right: 5cm;
+padding-left: 5cm;
+height: 15vh;
+background-color: rgb(76, 69, 57);
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: end  ;
+position: fixed;
+z-index: 1;
+}
+
+
+.hamburger-menu{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 50px;
+}
+.hamburger-menu:hover{
+    opacity: 0.6;
+}
+
+.hamburger-menu:active{
+ background-color: gray;
+}
+
+.hamburger-menu i{
+    color: white;
+    font-size: 32px;
+}
+
+#nav-toggle:checked + nav ul {
+    display: flex;
+  }
+
+nav{
+
+    display:flex;
+    justify-content: space-between;
+    font-family: Margin;
+    width: 100%;
+
+}
+
+nav ul li .active-link{
+color:rgb(27, 24, 20);
+}
+.Logo{
+    color: white;
+    font-size: 40px;
+    font-family: Margin;
+    font-weight: 400;
+    letter-spacing: 2px;
+    width: 100%;  
+    cursor: pointer;
+}
+
+nav ul{
+    align-items: center;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+   
+}
+nav ul li{
+    list-style: none;
+    
+}
+nav ul li a{
+    padding-left: 7px;
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize; 
+    font-family: Margin;
+    
+    font-weight: 200;
+    font-size: 35px;
+} 
+nav ul li a:hover{
+
+    color: rgb(39, 35, 29);
+    transition: .4s;
+
+} 
+
+
+
+
+
+.home-section{
+    background: url('vecteezy_shelves-with-different-types-of-sports-shoes-shallow-depth_21866617.JPG') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.about-section{
+    background-color: rgb(244, 244, 244);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.about-content{
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.about-image-content{
+    width: 80vh;
+    height: 100vh;
+    background: url('shoes.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-text-content{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    flex-direction: column;
+    font-size: 30px;
+    font-family: 'Marjorie';
+    font-weight: 100;
+    margin-left: 14vh;
+}
+
+.about-text-content h1{ 
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-family: 'Margin';
+    font-size: 62px;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: 15px;
+    letter-spacing: 1.7px;
+}
+
+
+
+
+
+
+.collection-section{
+    background-color: rgb(245, 245, 245);
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.collection-heading-text{
+    padding-top: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Margin';
+    font-size: 62px;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.collection-container{
+
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.row1{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.row2{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-container{
+    width: 49%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.card-heading{
+
+    height: 1px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Marjorie';
+    font-size: 20px;
+    color: rgb(76, 69, 57);
+
+}
+
+.card-images{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-image-1, .card-image-2, .card-image-3{
+    width: 32%;
+    height: 100%;
+    background-color: rgb(87, 87, 87);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow:
+    0 0 10px 5px #77777782 /* inner white */
+
+}
+
+.card-image-1:hover, .card-image-2:hover, .card-image-3:hover{
+transform: scale(1.1);
+transition: 0.6s;
+
+}
+    
+
+.img{
+height: 90%;
+width: 100%;
+}
+
+.color-label{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Marjorie';
+    font-size: 18px;
+    color: white;
+    background-color: rgb(76, 69, 57);
+}
+
+.vans1{
+    background: url(bnw-vans.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.vans2{
+    background: url(blck-vans.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.vans3{
+    background: url(blue_vans.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ad1{
+    background: url(ad_green.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ad2{
+    background: url(ad_white.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ad3{
+    background: url(ad_brown.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.con1{
+    background: url(con_maroon.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.con2{
+    background: url(con_violet.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.con3{
+    background: url(con_black\ glit.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.nike1{
+    background: url(nike_royal\ blue.avif) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.nike2{
+    background: url(nike_olive\ green.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.nike3{
+    background: url(nike_red.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.color-label{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Marjorie';
+    font-size: 18px;
+    color: white;
+    background-color: rgb(76, 69, 57);
+}
+
+
+
+.contact-section{
+    background:url('con-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6cm;
+}
+
+.blur-container{
+    background-color: rgba(0, 0, 0, 0.663);
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-content{
+
+    height: 75vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-heading{
+    font-size: 100px;
+    color: rgb(251, 232, 197);
+    font-family: 'Margin';
+    margin-top: 2cm;
+}
+
+.social-icons{
+    margin-right: .6cm;
+    width: 60%;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.social-icons a{
+   text-decoration: none;
+
+}
+
+.social-icons i{
+    font-size: 80px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(186, 169, 138);
+
+
+    
+}
+
+.social-icons i:hover{
+
+    color: white;
+
+}
+
+
+.home-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:100%;
+  width: 100%;
+  background-color: rgba(37, 34, 28, 0.664);
+
+
+}
+
+.contact-heading1{
+    color: rgb(254, 248, 237);;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Margin';
+    font-size: 100px;
+    width: 100%;
+    height: 10vh;
+    margin-top: 2cm;
+}
+
+.home-content .text-content{
+    margin-top: 2cm;
+    height: 60%;
+    width: 100%;
+    border-radius: 12px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+
+    
+}
+
+.home-content .text-content h3{
+    height: 60vh;
+    width: 80%;
+    font-family: Margin;
+    font-weight: 500;
+    color: rgb(209, 189, 155);
+    font-size: 62PX;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1.5px;
+    
+
+
+    
+}
+
+
+
+
+@media only screen and (max-width: 1400px){
+    .about-text-content{
+        width: 100%;
+        height: 85vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10vh;
+        font-size: 22px;
+        font-family: 'Marjorie';
+        font-weight: 100;
+        margin-left: 0;
+
+    }
+  }
+
+
+  @media only screen and (max-width: 1300px) {
+    .about-text-content{
+        width: 100%;
+        height: 85vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10vh;
+        font-size: 22px;
+        font-family: 'Marjorie';
+        font-weight: 100;
+        margin-left: 0;
+ 
+    }
+  }
+
+
+  @media (min-width: 1200px) {
+    nav ul {
+      display: flex; /* Display the navigation menu for screen sizes above 1200px */
+    }
+  }
+
+
+
+@media only screen and (max-width: 1200px) {
+    header{
+        width: 100%;
+        padding: 1cm;
+        padding-right: 1cm;
+        padding-left: 1cm;
+        height: 15vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        
+        }
+
+        .Logo{
+            color: white;
+            font-size: 20px;
+            font-family: Margin;
+            font-weight: 400;
+            letter-spacing: 2px;
+            width: 100%; 
+     
+        }
+        
+        .hamburger-menu{
+            display: flex;
+        }
+     
+        .hamburger-menu box-icon{
+            color: white;
+            font-size: 28px;
+        }
+        
+        nav{
+        
+            display:flex;
+            justify-content: space-between;
+            font-family: Margin;
+            width: 100%;
+        
+        }
+        #nav-toggle:checked + nav ul {
+            display: flex;
+          }
+
+        nav ul{
+            padding-top: 4cm;
+            align-items: start;
+            display: none;
+            flex-direction: column;
+            justify-content:start;
+            width: 50%;
+            height: 100%;
+            background-color: rgb(76, 69, 57);
+            position: fixed;
+            left: 0;
+            top: 0;
+            border-right: 1px solid rgba(255, 255, 255, 0.688);  
+        }
+        nav ul li{
+            list-style: none;
+            
+        }
+        nav ul li a{
+            padding-left: 7px;
+            margin-left: 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: capitalize; 
+            font-family: Margin;
+            
+            font-weight: 200;
+            font-size: 35px;
+        } 
+
+        .home-content .text-content{
+            margin-top: 3.3cm;
+            height: 60%;
+            width: 100%;
+            border-radius: 12px;
+            display: flex;
+            align-items: start;
+            justify-content: center;
+                
+        }
+
+        .home-content .text-content h3{
+            margin-left: 2cm;
+            font-size: 40PX;
+            
+        }
+
+        .about-text-content{
+            width: 100%;
+            height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10vh;
+            font-size: 22px;
+            font-family: 'Marjorie';
+            font-weight: 100;
+            margin-left: 0;
+
+        }
+    
+  }
+
+
+@media only screen and (max-width: 780px) {
+    .about-text-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        font-size: 14px;
+        margin-left: 0;
+
+    }
+ 
+    .contact-heading{
+        font-size: 50px;
+        color: rgb(251, 232, 197);
+        font-family: 'Margin';
+        margin-top: 2cm;
+        margin-left: 8px;
+     
+    }
+
+    .contact-heading1{
+        color: rgb(254, 248, 237);;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Margin';
+        font-size: 60px;
+        width: 100%;
+        height: 10vh;
+        margin-top: 2cm;
+       
+    }
+
+    .color-label{
+        width: 100%;
+        height: 17%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Marjorie';
+        font-size: 11px;
+        color: white;
+        background-color: rgb(76, 69, 57);
+}
+     
+.home-content .text-content{
+    margin-top: 4cm;
+    height: 60%;
+    width: 100%;
+    border-radius: 12px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+
+    
+}
+
+.home-content .text-content h3 {
+    font-size: 39px; 
+    margin-left: 1px;
+    
+}
+
+.about-text-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    font-size: 16px;
+    margin-left: 0;
+}
+
+.social-icons{
+    margin-right: 100px;
+
+}
+    
+
+.social-icons i{
+    font-size: 70px;
+    
+   
+}
+}
+
+
+
+@media only screen and (max-width: 400px) {
+    .about-text-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        font-size: 14px;
+        margin-left: 0;
+
+    }
+ 
+    .contact-heading{
+        font-size: 50px;
+        color: rgb(251, 232, 197);
+        font-family: 'Margin';
+        margin-top: 2cm;
+        margin-left: 8px;
+     
+    }
+
+    .contact-heading1{
+        color: rgb(254, 248, 237);;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Margin';
+        font-size: 60px;
+        width: 100%;
+        height: 10vh;
+        margin-top: 2cm;
+       
+    }
+
+    .color-label{
+        width: 100%;
+        height: 17%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Marjorie';
+        font-size: 11px;
+        color: white;
+        background-color: rgb(76, 69, 57);
+}
+.collection-heading-text{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Margin';
+    font-size: 50px;
+    width: 100%;
+    height: 100vh;
+
+}
+     
+.home-content .text-content{
+    margin-top: 4cm;
+    height: 60%;
+    width: 100%;
+    border-radius: 12px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+
+    
+}
+
+.home-content .text-content h3 {
+    font-size: 39px; 
+    
+  
+}
+
+.about-text-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    font-size: 14px;
+    margin-left: 0;
+}
+
+.social-icons{
+    margin-right: 100px;
+
+}
+    
+
+.social-icons i{
+    font-size: 70px;
+    
+   
+}
+}
+
