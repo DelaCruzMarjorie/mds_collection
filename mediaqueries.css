@@ -354,7 +354,22 @@
 .social-icons i{
     font-size: 80px;
 }
+
+footer {
+    background-color: rgb(76, 69, 57);
 }
+
+footer p{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 11px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+}
+
 
 
 /*mobile phones*/
@@ -614,9 +629,23 @@
     font-size: 50px;
     margin-left: 0  ;
     color: rgb(76, 69, 57);
-   
 
 }
+
+footer {
+    background-color: rgb(76, 69, 57);
+}
+
+footer p{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+}
+
 }
 
 /*mobile phones*/
