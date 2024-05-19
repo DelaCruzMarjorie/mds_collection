@@ -555,4 +555,17 @@ width: 100%;
 }
 
 
+footer {
+    background-color: rgb(76, 69, 57);
+}
+
+footer p{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
 
