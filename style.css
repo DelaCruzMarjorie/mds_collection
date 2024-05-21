@@ -113,10 +113,6 @@ nav ul li a:hover{
 
 } 
 
-
-
-
-
 .home-section{
     background: url('vecteezy_shelves-with-different-types-of-sports-shoes-shallow-depth_21866617.JPG') no-repeat;
     background-size: cover;
@@ -566,6 +562,6 @@ footer p{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px;
+    padding: 20px;
 }
 
