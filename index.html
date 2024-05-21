@@ -6,30 +6,32 @@
     <title>Personal Portfolio Website</title>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-
-    <!-- Custom Css Link -->
+      rel="stylesheet"/>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css">
+
   </head>
   <body>
+    
     <header>
+
       <h2 class="Logo" ><i class='bx bx-store'></i>MD's Collections</h2>
       
-        <nav>
+  <nav>
         <ul>
           <li><a href="#home"class="active-link"><i class='bx bx-home-alt' ></i>Home</a></li>
           <li><a href="#about"><i class='bx bx-info-circle'></i>About</a></li>
           <li><a href="#collection"><i class='bx bx-collection' ></i>Collection</a></li>
           <li><a href="#contact"><i class='bx bx-phone'></i>Contact</a></li>
         </ul>
-      </nav>
-      <div class="hamburger-menu" id="hamburger-menu">
-        <label for="nav-toggle">
+  </nav>
+
+    <div class="hamburger-menu" id="hamburger-menu">
+      <label for="nav-toggle">
           <i class="bx bx-menu"></i>
-        </label>
-      </div>
+      </label>
+    </div>
       <input type="checkbox" id="nav-toggle" style="display: none;">
     </header>
 
@@ -45,6 +47,7 @@
       <div class="about-content">
     
         <div class="about-image-content"></div>
+
         <div class="about-text-content">
         <H1>About</H1>
           This meticulously curated collection transcends footwear; it's a
@@ -72,60 +75,56 @@
                 <div class="img vans1"></div>
                 <div class="color-label">Black/White</div>
               </div>
-              <div class="card-image-2">
-                <div class="img vans2"></div>
-                <div class="color-label">Black</div>
-              </div>
-              <div class="card-image-3" >
-                <div class="img vans3"></div>
-                <div class="color-label">Blue</div>
+            <div class="card-image-2">
+          <div class="img vans2"></div>
+        <div class="color-label">Black</div>
+      </div>
+        <div class="card-image-3" >
+          <div class="img vans3"></div>
+              <div class="color-label">Blue</div>
     
-               </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
       
-   
-
-        
-          <div class="row2"> 
+      <div class="row2"> 
           <div class="card-container">
             <div class="card-heading">Adidas</div>
-            <div class="card-images">
+              <div class="card-images">
                 <div class="card-image-1">
                   <div class="img ad1"></div>
-                  <div class="color-label">Green</div>
-                </div>
-                <div class="card-image-2">
-                  <div class="img ad2"></div>
-                  <div class="color-label">White</div>
-                </div>
-                <div class="card-image-3" >
-                  <div class="img ad3"></div>
-                  <div class="color-label">Brown</div>
-                </div>
+                <div class="color-label">Green</div>
+              </div>
+            <div class="card-image-2">
+          <div class="img ad2"></div>
+        <div class="color-label">White</div>
+      </div>
+          <div class="card-image-3" >
+              <div class="img ad3"></div>
+                <div class="color-label">Brown</div>
               </div>
             </div>
-        </div>
+          </div>
+       </div>
       
-  
         <div class="row3">
             <div class="card-container">
                 <div class="card-heading">Converse</div>
-                <div class="card-images">
-                    <div class="card-image-1">
-                      <div class="img con1"></div>
-                      <div class="color-label">Maroon</div>
+                  <div class="card-images">
+                     <div class="card-image-1">
+                        <div class="img con1"></div>
+                          <div class="color-label">Maroon</div>
                     </div>
-                    <div class="card-image-2">
-                      <div class="img con2"></div>
-                      <div class="color-label">Violet</div>
-                    </div>
-                    <div class="card-image-3" >
-                      <div class="img con3"></div>
-                      <div class="color-label">Black glit</div>
-                    </div>
+                <div class="card-image-2">
+              <div class="img con2"></div>
+          <div class="color-label">Violet</div>
+        </div>
+              <div class="card-image-3" >
+                  <div class="img con3"></div>
+                    <div class="color-label">Black glit</div>
+                     </div>
                   </div>
                 </div>
              </div>
@@ -168,89 +167,7 @@
       </div>
      </div>
     </section>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-          // Get all the links
-          var links = document.querySelectorAll("nav ul li a");
-      
-          // Add click event listeners to each link
-          links.forEach(function(link) {
-            link.addEventListener("click", function(event) {
-              // Remove the active class from all links
-              links.forEach(function(item) {
-                item.classList.remove("active-link");
-              });
-      
-              // Add the active class to the clicked link
-              this.classList.add("active-link");
-            });
-          });
-        });
-      </script>
-      
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-          // Get the phone icon element
-          var phoneIcon = document.getElementById("phone-icon");
-    
-          // Add click event listener to the phone icon
-          phoneIcon.addEventListener("click", function(event) {
-            // Prevent default link behavior
-            event.preventDefault();
-    
-            // Copy the mobile number to the clipboard
-            var mobileNumber = "+639363453116"; // Replace this with your actual mobile number
-            navigator.clipboard.writeText(mobileNumber)
-              .then(function() {
-                // Alert the user that the number has been copied
-                alert("Mobile number copied to clipboard: " + mobileNumber);
-              })
-              .catch(function(error) {
-                console.error("Unable to copy mobile number: ", error);
-              });
-          });
-        });
-      </script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const hamburgerMenu = document.getElementById("hamburger-menu");
-    const navToggle = document.getElementById("nav-toggle");
-    const navUl = document.querySelector("nav ul");
-
-    hamburgerMenu.addEventListener("click", function() {
-      // Check if screen width is greater than 1200px
-      if (window.innerWidth > 1200) {
-        return; // Stop execution if screen width is above 1200px
-      }
-      
-      if (navUl.style.display === "none" || navUl.style.display === "") {
-        navUl.style.display = "flex";
-      } else {
-        navUl.style.display = "none";
-      }
-    });
-  });
-</script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const navUl = document.querySelector("nav ul");
-
-    // Check screen width on page load
-    if (window.innerWidth > 1200) {
-      navUl.style.display = "flex";
-    }
-
-    // Check screen width on window resize
-    window.addEventListener("resize", function() {
-      if (window.innerWidth > 1200) {
-        navUl.style.display = "flex";
-      } else {
-        navUl.style.display = "none";
-      }
-    });
-  });
-</script>
-
+   
 
 <footer>
   <p>&copy;Copyright, MD's Collections 2024. All Rights Reserved.</p>
@@ -259,3 +176,4 @@
 
   </body>
 </html>
+
